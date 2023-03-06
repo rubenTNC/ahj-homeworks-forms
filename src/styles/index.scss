@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.button {
+    background-color: aqua;
+    border: none;
+    padding: 7px 15px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.widget-popover{
+    margin: 100px;
+    position: relative;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.popover {
+    border: 2px solid black;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 40px;
+    display: none;
+    &.active {
+        display: block;
+    }
+    .popover__title {
+        background-color: rgb(247, 237, 225);
+        padding: 5px 10px;
+        font-weight: 700;
+    }
+    .popover__text{
+        padding: 5px 10px;
+    }
+}
+
